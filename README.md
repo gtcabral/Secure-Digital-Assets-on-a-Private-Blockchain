@@ -13,6 +13,7 @@ Local server
 7. bitcoinjs - https://github.com/bitcoinjs
 
 __Diagram of Sequence__
+
 ![Sequence Diagram](https://github.com/gtcabral/Secure-Digital-Assets-on-a-Private-Blockchain/blob/master/project4-workflow.png)
 
 ## Getting Started
