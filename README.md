@@ -12,7 +12,7 @@ Local server
 6. hex2ascii - https://www.npmjs.com/package/hex2ascii
 7. bitcoinjs - https://github.com/bitcoinjs
 
-![Sequence Diagram](https://drive.google.com/file/d/1fP7izME30WvWLhdz7v2-l-qgWOBq-ls4/view?usp=sharing)
+![Sequence Diagram](https://github.com/gtcabral/Secure-Digital-Assets-on-a-Private-Blockchain/blob/master/project4-workflow.png)
 
 ## Getting Started
 
