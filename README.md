@@ -20,9 +20,10 @@ __Diagram of Sequence__
 
 To set up the project for review do the following:
 1. Download the project or clone the repository --> git clone https://github.com/gtcabral/Secure-Digital-Assets-on-a-Private-Blockchain
-2. Install __node.js__ (https://nodejs.org/en/download/)
-3. Run command __npm install__ to install the project dependencies.
-4. Run command __node app.js__ in the root directory.
+2. Rum command __cd Secure-Digital-Assets-on-a-Private-Blockchain__
+3. Install __node.js__ (https://nodejs.org/en/download/)
+4. Run command __npm install__ to install the project dependencies.
+5. Run command __node app.js__ in the root directory.
 
 ## Endpoints
 
