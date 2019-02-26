@@ -71,6 +71,14 @@
             this.removeRequestObject(address);
         }
 
+        setIsNotValid(address){
+            for (var i = 0; i < this.mempoolValid.length; i++){
+                if (JSON.parse(this.mempoolValid[i]).status.address == address) {
+                    this.mempoolValid.splice(i, 1);
+                } 
+            }
+        }
+
         getValidRequest(address){
             for (var i = 0; i < this.mempoolValid.length; i++){
                 if (JSON.parse(this.mempoolValid[i]).status.address == address) {

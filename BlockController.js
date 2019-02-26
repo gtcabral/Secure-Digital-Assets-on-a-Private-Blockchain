@@ -98,6 +98,7 @@ class BlockController {
                         let body = new Body.Body(address, star);
 
                         this.mempool.addBlock(body).then((result) => {
+                            this.mempool.setIsNotValid(address);
                             res.send(result);
                         });
                     } else {
