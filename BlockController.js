@@ -36,7 +36,7 @@ class BlockController {
                 console.log("the address " + address + " is already in the mempool");
                 res.send (JSON.stringify(this.mempool.getRequestObject(address)).toString());
             } else {
-                res.send (JSON.stringify(this.mempool.addRequestValidation(address)).toString());
+                res.send (this.mempool.addRequestValidation(address));
             } 
             
         });
@@ -58,7 +58,7 @@ class BlockController {
                     //signature checked
                     if (this.mempool.verifyBitcoinMessage(address, signature)){
                         this.mempool.removeTimeOut(address);
-                        res.send(this.mempool.getValidRequest(address));
+                        res.send(JSON.parse(this.mempool.getValidRequest(address)))
                     } else { 
                         res.send("Signature is not valid! Try again.");
                     }
@@ -99,7 +99,7 @@ class BlockController {
 
                         this.mempool.addBlock(body).then((result) => {
                             this.mempool.setIsNotValid(address);
-                            res.send(result);
+                            res.send(JSON.parse(result));
                         });
                     } else {
                         res.send("You should have a valid address before try to register a star");
